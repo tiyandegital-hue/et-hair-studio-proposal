@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Chair — ET Hair Studio, Fernie BC</title>
+<meta name="description" content="Book an appointment at ET Hair Studio, Fernie BC — online booking placeholder, appointment request form, or call +1 250-423-4813.">
+<meta property="og:title" content="Book a Chair — ET Hair Studio">
+<meta property="og:description" content="Request an appointment online, or call +1 250-423-4813.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://et-hair-studio-proposal.vercel.app/booking.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560..600&family=Libre+Franklin:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js");</script>
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-strip">Concept demo for <span data-site-name>ET Hair Studio</span> · built by Tiyan Digital · illustrative photos</div>
+
+<header class="site-header">
+  <div class="wrap nav-bar">
+    <a class="brand" href="index.html" aria-label="ET Hair Studio — home">
+      <span class="brand-mark" aria-hidden="true">ET</span>
+      <span class="brand-name" data-site-name>ET Hair Studio</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="site-nav">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="stylists.html">Stylists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="btn" href="booking.html" aria-current="page">Book a chair</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Booking</p>
+      <h1>Your chair is<br>one tap away.</h1>
+      <p class="lede">Three ways in: online booking, a quick request form, or a phone call with a human on the other end.</p>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="schedulicity-hero reveal">
+        <p class="eyebrow">Online booking</p>
+        <h2 style="margin-bottom:1.5rem">Pick your time</h2>
+        <a class="btn" href="https://www.schedulicity.com/scheduling/[SCHEDULICITY-ID]">Book online <span class="tag-sample" style="color:var(--on-accent); border-color:rgba(255,255,255,.5)">[Sample link — salon's real booking URL goes here]</span></a>
+        <p style="margin-top:1.25rem; color:var(--muted); font-size:.9375rem; max-width:52ch; margin-inline:auto;">This button is a placeholder. The salon's real Schedulicity scheduling link replaces it — same button, real calendar.</p>
+      </div>
+
+      <div class="or-divider" aria-hidden="true">or</div>
+
+      <div class="section-head reveal">
+        <p class="eyebrow">Request form</p>
+        <h2>Ask for a time</h2>
+        <p style="color:var(--muted)">Tell us what you want and when — the salon confirms by phone.</p>
+      </div>
+
+      <div class="reveal">
+        <div class="form-card">
+          <p class="form-demo">Demo form — sends nothing anywhere</p>
+          <form data-demo-form novalidate>
+            <div class="field">
+              <label for="bk-name">Your name <span class="req" aria-hidden="true">*</span></label>
+              <input id="bk-name" name="name" type="text" autocomplete="name" required data-validate>
+              <p class="error-msg" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="bk-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+              <input id="bk-phone" name="phone" type="tel" autocomplete="tel" required data-validate>
+              <p class="hint">So the salon can confirm your time.</p>
+              <p class="error-msg" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="booking-service">Service</label>
+              <select id="booking-service" name="service" data-validate>
+                <option value="">Not sure yet — help me choose</option>
+                <option>One-length trim</option>
+                <option>Precision cut + style</option>
+                <option>Face-framing reshape</option>
+                <option>Kid's cut (under 12)</option>
+                <option>Root touch-up</option>
+                <option>Full colour</option>
+                <option>Partial balayage</option>
+                <option>Full balayage + reshape</option>
+                <option>Gloss + toner refresh</option>
+                <option>Signature blowout</option>
+                <option>Event styling + trial</option>
+                <option>Updo</option>
+                <option>Braids + texture</option>
+                <option>Deep conditioning ritual</option>
+                <option>Scalp reset treatment</option>
+                <option>Keratin smoothing</option>
+              </select>
+              <p class="hint" id="booking-prefill-note" hidden>Prefilled from your “Find your service” result — change it freely.</p>
+              <p class="error-msg" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="bk-date">Preferred date</label>
+              <input id="bk-date" name="date" type="date" data-validate>
+              <p class="error-msg" role="alert"></p>
+            </div>
+            <div class="consent">
+              <input id="bk-consent" name="consent" type="checkbox" value="yes">
+              <label for="bk-consent">I agree the salon may contact me about this appointment request. This is a demo form — nothing is sent or stored.</label>
+            </div>
+            <button class="btn" type="submit">Request appointment</button>
+          </form>
+          <div class="form-success" role="status">
+            <b>Request noted — demo complete.</b>
+            <p style="margin:0">In the live site, this request would go straight to the salon. Here, nothing was sent anywhere.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="or-divider" aria-hidden="true">or</div>
+
+      <div class="info-card reveal" style="text-align:center">
+        <p class="k">Prefer a human?</p>
+        <a class="big-link" href="tel:+12504234813">+1 250-423-4813</a>
+        <p style="color:var(--muted); font-size:.9375rem; margin-top:.75rem">Call and confirm your time directly with the salon.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="index.html" aria-label="ET Hair Studio — home">
+        <span class="brand-mark" aria-hidden="true">ET</span>
+        <span class="brand-name" data-site-name>ET Hair Studio</span>
+      </a>
+      <ul class="footer-legal">
+        <li><a href="booking.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </div>
+    <p class="footer-note">Concept proposal site built by Tiyan Digital for <span data-site-name>ET Hair Studio</span> — a demo, not the salon's real website. Photos are illustrative (generated for this concept). Services, prices, reviews, and hours shown are samples until confirmed by the salon. © <span id="year">2026</span>.</p>
+  </div>
+</footer>
+</body>
+</html>
